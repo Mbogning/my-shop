@@ -2,7 +2,7 @@ import React from 'react'
 import '../styles/App.css'
 
 
-export const Header = () => {
+export const Header = ({ filter, setFiltering }) => {
     return (
         <nav className='navbar orange navbar-expand-lg navbar-light bg-light'>
             <a href='' className='navbar-brand crimson'>
@@ -25,8 +25,16 @@ export const Header = () => {
                     
                 </ul>
                 <form className="d-flex">
-                    <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                        <button className="btn btn-outline-success" type="submit">Search</button>
+                    <input className="form-control me-2" 
+                            type="search" 
+                            placeholder="Search" 
+                            aria-label="Search" 
+                            onChange={(e)=> {
+                                setFiltering(e.target.value.length > 0)
+                                filter(e.target.value)}}
+                            />
+        
+                        {/* <button className="btn btn-outline-success" type="submit">Search</button> */}
                 </form>
             </div>
 
