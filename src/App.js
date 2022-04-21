@@ -19,7 +19,7 @@ const App = () => {
           <SideMenu loadCategory={loadCategory} category={category}/>
           <div className='col-sm'>
             <div className='row'>
-              <ListCard data={list} category={category} />
+              <ListCard data={list[category]} category={category} />
             </div>
           </div>
         </div>
