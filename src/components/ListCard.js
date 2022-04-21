@@ -2,8 +2,8 @@ import React from 'react'
 import Card from './Card'
 
 const ListCard = props => {
-    const {data} = props
-    const fruits = data[0]
+    const {data, category} = props
+    const fruits = data[category]
     return (
         <div className='col-sm'>
             <div className='row'>

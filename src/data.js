@@ -156,7 +156,7 @@ const ananas = [
         name: 'ananas 1',
         price: 0.13,
         unit: 'piece',
-        image: 'ananas.jpg'
+        image: 'ananas1.jpg'
     },
     {
         ref: 'ananas_2',
