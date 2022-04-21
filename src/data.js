@@ -55,7 +55,7 @@ const mangues = [
         name: 'mangue 1',
         price: 0.50,
         unit: 'piece',
-        image: 'mangue.jpg'
+        image: 'mangue1.jpg'
     },
     {
         ref: 'mangue_2',

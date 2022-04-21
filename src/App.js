@@ -16,7 +16,7 @@ const App = () => {
       <Header />
       <div className='container mt-5'>
         <div className='row'>
-          <SideMenu loadCategory={loadCategory}/>
+          <SideMenu loadCategory={loadCategory} category={category}/>
           <div className='col-sm'>
             <div className='row'>
               <ListCard data={list} category={category} />
